@@ -27,7 +27,7 @@ const App = () => {
       <div className="container" ref={containerRef}>
         <div className="fullImage">
           <motion.img
-            src="src/assets/img.svg"
+            src="/assets/img.svg"
             alt="background"
             style={{ scale: imageScale, opacity: imageOpacity }}
             transition={{ duration: 0.2 }} // Smooth transition for image
