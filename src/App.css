@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  background-color: rgb(24, 24, 24); /* Background color of the body */
+}
+
+.container {
+  height: 300vh; /* Ensure enough scrollable space */
+  position: relative;
+}
+
+.fullImage {
+  position: fixed; /* Keeps the image in place */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1; /* Place the image behind other content */
+}
+
+.fullImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the viewport */
+  transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Contain the content when it scales */
+}
+
+.el {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Contain the content when it scales */
+}
+
+.textContainer {
+  font-size: 4vw; /* Adjust the initial font size */
+  font-weight: bold;
+  color: #fff;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  background-image: url("src/assets/img.svg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transitions for opacity and scale */
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(104, 102, 102);
+  position: absolute; /* Ensure the box is positioned absolutely within the container */
+  bottom: 0; /* Start from the bottom of the container */
+  opacity: 0; /* Start with hidden opacity */
+  transform: translateY(250px); /* Start off-screen from below */
+}

@@ -1,0 +1,10 @@
+       /* <div className="box">
+        <motion.div
+          className="box1"
+          // style={{
+          //   opacity: boxOpacity,
+          //   y: boxY, // Moves the box upward
+          // }}
+          // transition={{ duration: 0.5 }} // Smooth transition for the box
+        ></motion.div>
+      </div>  */
